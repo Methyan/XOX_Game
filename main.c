@@ -1,9 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <locale.h>
-#include <unistd.h>
-
 
 
 // TEXT FONKSIYONLARI:
@@ -81,7 +76,7 @@ int main(){
         printf("\nIlk oyuncu karakterini nereye yazacak: ");
         scanf("%d", &konum1);
         matris_yazidrma(konum1, karakter1); // x
-        yazdirma(matris);
+        yazdirma();
 
         kontrol_sonuc = kontrol();
         if (kontrol_sonuc == 1){
@@ -97,7 +92,7 @@ int main(){
         printf("\nIkıncı oyuncu karakterini nereye yazacak: ");
         scanf("%d", &konum2);
         matris_yazidrma(konum2, karakter2); // o
-        yazdirma(matris);
+        yazdirma();
 
         kontrol_sonuc = kontrol();
         if (kontrol_sonuc == 1){
@@ -112,7 +107,7 @@ int main(){
     printf("\nIlk oyuncu karakterini nereye yazacak: ");
     scanf("%d", &konum1);
     matris_yazidrma(konum1, karakter1);
-    yazdirma(matris);
+    yazdirma();
 
     kontrol_sonuc = kontrol();
     if (kontrol_sonuc == 1){
@@ -338,9 +333,3 @@ void yazdirma(){
     }
 
 }
-
-
-
-
-
-
